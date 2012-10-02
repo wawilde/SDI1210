@@ -9,7 +9,7 @@
 // declare global variables
 var strName = "Woody";
 var numAge = 41;
-//var arrStates = [Florida, Georgia, Tennesee, Kentucky, Indiana];
+var arrStates = [ Florida, Georgia, Tennesee, Kentucky, Indiana ];
 
 //procedure
 var addition = function (num1, num2){
@@ -36,31 +36,42 @@ var funcNum = arg1 + arg2;
         return funcNum;
     };
 
-// Number function
+/* Number function
 function(){
-    
+    if (){
+        
+    } else {
+        
+    };
 };
+*/
 
 
 
 
-
-//String function
+/*String function
 function( ){
-    
+    if (){
+        
+    } else {
+        
+    };
+};
+
+*/
+
+
+/*Array function
+function( ){
+    if (){
+        
+    } else {
+        
+    }:
 };
 
 
-
-
-//Array function
-function(){
-    
-};
-
-
-
-
+*/
 
 
 
