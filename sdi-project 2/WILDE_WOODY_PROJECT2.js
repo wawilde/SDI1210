@@ -36,27 +36,27 @@ var funcNum = arg1 + arg2;
         return funcNum;
     };
 
-
-
-
-
-
-
 // Number function
-
+function(){
+    
+};
 
 
 
 
 
 //String function
-
+function( ){
+    
+};
 
 
 
 
 //Array function
-
+function(){
+    
+};
 
 
 
@@ -65,6 +65,6 @@ var funcNum = arg1 + arg2;
 
 
 //code execution
-addition(23, 19);
-booFunc(arg1,arg2);
+addition(23, 19);       //Procedure
+booFunc(arg1,arg2);     //boolean function
 console.log("But if you add " + arg1 + " and " + arg2 + " the answer is " + funcNum);   //Boolean return
