@@ -12,14 +12,14 @@ var numAge = 41;
 //var arrStates = [Florida, Georgia, Tennesee, Kentucky, Indiana];
 
 //procedure
-//var addition = function (num1, num2){
-//    var sum = num1 + num2;
-//    
-//    return sum;
-//};
+var addition = function (num1, num2){
+    var sum = num1 + num2;
+    console.log("The total of " + num1 +" and " + num2 + " is " + sum);
+    return sum;
+};
 
 //boolean function
-var arg1 = 2;
+var arg1 = 23;
 var arg2 = 19;
 var funcNum = arg1 + arg2;  
     var booFunc = function (arg1, arg2){
@@ -31,12 +31,10 @@ var funcNum = arg1 + arg2;
                 console.log("Aha! Proof that " + arg2 + " is greater than " + arg1);
             };
         } else { 
-            console.log(arg2 + "is less than " + arg1);
+            console.log(arg2 + " is less than " + arg1);
         };
         return funcNum;
     };
-booFunc(arg1,arg2);
-console.log("But if you add " + arg1 + " and " + arg2 + " the answer is " + funcNum);   
 
 
 
@@ -67,5 +65,6 @@ console.log("But if you add " + arg1 + " and " + arg2 + " the answer is " + func
 
 
 //code execution
-//console.log("The answer to Life, The Universe and Everything is " + addition(10, 32));
-//console.log(""  + funcnum); 
+addition(23, 19);
+booFunc(arg1,arg2);
+console.log("But if you add " + arg1 + " and " + arg2 + " the answer is " + funcNum);   //Boolean return
