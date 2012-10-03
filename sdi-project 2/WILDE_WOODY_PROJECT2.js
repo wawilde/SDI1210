@@ -52,6 +52,9 @@ var strfun = function(nam1,nam2){
 };
 
 //Array Function
+var arrfun = function (arrStates, numAge){
+    for(){};
+};
 
 
 
