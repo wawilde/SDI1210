@@ -45,9 +45,9 @@ var ageCheck = function(num){
 
 //String Function ---- WORKING DO NOT MESS WITH!
 var strfun = function(nam1,nam2){
-    console.log(nam1 + " and " + nam2 + " were best friends at one time.");
+return(console.log(nam1 + " and " + nam2 + " were best friends at one time."));
 
-    return ;
+    
     
 };
 
@@ -59,8 +59,9 @@ var arrfun = function (arrStates, numAge){
 
 
 //code execution
-addition(23);       //Procedure
+addition(23);                                                    //Procedure
 namCheck(console.log("What if everything you knew was "+ name)); // <---- is not displaying in console correctly!
-ageCheck(5);
-var strRtn = strfun(p, strName);
-console.log(strRtn);
+ageCheck(5);                                                     //Number Function
+var strRtn = strfun(p, strName);                                 //Variable for return output of String Function
+console.log(strRtn);                                             //String Function
+
