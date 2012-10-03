@@ -10,7 +10,6 @@
 var strName = "Zaphod Beablebrox";
 var numAge = 10;
 var p = "Ford Fairlane"
-var arrStates = [Florida, Georgia, Tennessee, Kentucky, Indiana];
 
 //Procedure ---- WORKING DO NOT MESS WITH!
 var addition = function (num1){
@@ -24,11 +23,11 @@ var addition = function (num1){
 };
 
 //Boolean Function ---- WORKING DO NOT MESS WITH!
-var namCheck = function () {
+var namCheck = function ( p , strName) {
     if (p === strName) {
-        var name = console.log("false ?");
-    } else {
         var name = console.log("true ?");
+    } else {
+        var name = console.log("false ?");
     
     };
 };
@@ -46,20 +45,22 @@ var ageCheck = function(num){
 
 //String Function ---- WORKING DO NOT MESS WITH!
 var strfun = function(nam1,nam2){
-    
-    return (console.log(nam1 + " and " + nam2 + " were best friends at one time."));
+    console.log(nam1 + " and " + nam2 + " were best friends at one time.");
+
+    return ;
     
 };
 
-//Array Function
+/*Array Function
 var arrfun = function (arrStates, numAge){
     for(){};
 };
-
+*/
 
 
 //code execution
 addition(23);       //Procedure
 namCheck(console.log("What if everything you knew was "+ name)); // <---- is not displaying in console correctly!
 ageCheck(5);
-strfun("ford","Zaphod");
+var strRtn = strfun(p, strName);
+console.log(strRtn);
