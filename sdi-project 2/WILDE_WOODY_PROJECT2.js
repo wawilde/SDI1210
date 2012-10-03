@@ -7,79 +7,55 @@
  */
 
 // declare global variables
-var strName = "Woody";
-var numAge = 41;
-var arrStates = [ Florida, Georgia, Tennesee, Kentucky, Indiana ];
-var arg1 = 23;
-var arg2 = 19;
-var funcNum = arg1 + arg2;
+var strName = "Zaphod Beablebrox";
+var numAge = 10;
+var p = "Ford Fairlane"
 
-//procedure
+
+//Procedure ---- WORKING DO NOT MESS WITH!
 var addition = function (num1){
-    var sum = num1 + 5;
+    var sum = num1 + 19;
         if (sum >= 10) {
-        console.log("The total of " + num1 + " plus 5 is : " + sum);
+        console.log("The total of " + num1 + " plus 19 is : " + sum);
     } else {
-    console.log("When " + num1 + " is added to 5 it totals " + sum + ".");
+        console.log("When " + num1 + " is added to 19 it totals " + sum + ".");
+    
+    };
+};
+
+//Boolean Function ---- WORKING DO NOT MESS WITH!
+var namCheck = function () {
+    if (p === strName) {
+        var name = console.log("false ?");
+    } else {
+        var name = console.log("true ?");
+    
+    };
+};
+
+//Number Function ---- WORKING DO NOT MESS WITH!
+var i = 1;
+var ageCheck = function(num){
+    
+        while (i < num){
+            console.log(i + " month's reading Douglas Adams." );
+            i++;
+    }; console.log(i + " months, that's how long it took me to read The Hitchikers Giude to the Galaxy.");
+  return i*i;
+};
+
+//String Function
+var strfun = function(nam1,nam2){
+    
+    return (console.log(nam1 + " and " + nam2 + " were best friends at one time."));
     
 };
 
-//boolean function
- 
-    var booFunc = function (arg1, arg2){
-        if (arg1 > arg2){ 
-            console.log(arg1 + " is greater than " + arg2);
-            if (arg1 < arg2){
-                console.log("I think " + arg2 + " is less than " + arg1);  
-            } else { 
-                console.log("Aha! Proof that " + arg2 + " is greater than " + arg1);
-            };
-        } else { 
-            console.log(arg2 + " is less than " + arg1);
-        };
-        return funcNum;
-    };
-
-/* Number function
-function(){
-    if (){
-        
-    } else {
-        
-    };
-};
-*/
-
-
-
-
-/*String function
-function( ){
-    if (){
-        
-    } else {
-        
-    };
-};
-
-*/
-
-
-/*Array function
-function( ){
-    if (){
-        
-    } else {
-        
-    }:
-};
-
-
-*/
 
 
 
 //code execution
-addition(23, 19);       //Procedure
-booFunc(arg1,arg2);     //boolean function
-console.log("But if you add " + arg1 + " and " + arg2 + " the answer is " + funcNum);   //Boolean return
+addition(23);       //Procedure
+namCheck(console.log("What if everything you knew was "+ name)); // <---- is not displaying in console correctly!
+ageCheck(5);
+strfun("ford","Zaphod");
