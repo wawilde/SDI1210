@@ -10,7 +10,7 @@
 var strName = "Zaphod Beablebrox";
 var numAge = 10;
 var p = "Ford Fairlane"
-
+var arrStates = [Florida, Georgia, Tennessee, Kentucky, Indiana];
 
 //Procedure ---- WORKING DO NOT MESS WITH!
 var addition = function (num1){
@@ -44,13 +44,14 @@ var ageCheck = function(num){
   return i*i;
 };
 
-//String Function
+//String Function ---- WORKING DO NOT MESS WITH!
 var strfun = function(nam1,nam2){
     
     return (console.log(nam1 + " and " + nam2 + " were best friends at one time."));
     
 };
 
+//Array Function
 
 
 
