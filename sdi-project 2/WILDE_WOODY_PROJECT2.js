@@ -22,14 +22,15 @@ var addition = function (num1){
     };
 };
 
-//Boolean Function ---- WORKING DO NOT MESS WITH!
+//Boolean Function ---- 
 var namCheck = function ( p , strName) {
        
     if (p === strName) {
-         console.log("true ?");
+         console.log("The computer replied true ?");
+        return true;
     } else {
-         console.log("false ?");
-    return name;
+         console.log("The computer replied false ?");
+        return false;
     };
     
 };
@@ -41,7 +42,7 @@ var timeCheck = function(num){
         while (i < num){
             console.log(i + " year's calculating and running numbers." );
             i++;
-    }; console.log(i + " generations had passed, and then suddenly after ");
+    }; console.log(i + " generations had passed, and then suddenly... ");
   return i;
 };
 
@@ -65,7 +66,7 @@ var arrfun = function (){
 console.log(strFun(p,strName));                                                 //String Function
 console.log("Since " + p + " became President of the Universe though, him and " + strName + " have not spoken much.");
 
-namCheck(console.log(strName + " asked the supercomputer while him and " + p + " were standing there if it had finished the calculations yet?" + name + " replied the computer."));   //Boolean<---- is not displaying in console correctly!
+namCheck(console.log(strName + " asked the supercomputer while him and " + p + " were standing there if it had finished the calculations yet?" + name));   //Boolean<---- is not displaying in console correctly!
 timeCheck(5);                                                                    //Number Function
 console.log("The supercomputer that had been biult, determined the meaning to Life, The Universe and Everything as 42");
 addition(23);                                                                   //Procedure
