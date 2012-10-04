@@ -29,20 +29,17 @@ var namCheck = function ( strName2 , strName) {
        
     if (strName2 === strName) {
          
-        return true;
+        return (name = true);
     } else {
          
-        return false;
+        return (name = false);
     };
-};
-
 if (namCheck === true){
         console.log("The computer replied true ?");
     } else {
         console.log("The computer replied false ?");  
 };
-
-
+};
 
 //Number Function ---- WORKING DO NOT MESS WITH!
 var i = 1;
