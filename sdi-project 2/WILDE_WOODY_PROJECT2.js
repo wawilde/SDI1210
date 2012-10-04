@@ -9,7 +9,7 @@
 // declare global variables
 var strName = "Zaphod Beablebrox";
 var numAge = 10;
-var p = "Ford Fairlane"
+var strName2 = "Ford Fairlane"
 
 //Procedure ---- WORKING DO NOT MESS WITH!
 var addition = function (num1){
@@ -23,17 +23,24 @@ var addition = function (num1){
 };
 
 //Boolean Function ---- 
-var namCheck = function ( p , strName) {
+var namCheck = function ( strName2 , strName) {
        
-    if (p === strName) {
-         console.log("The computer replied true ?");
+    if (strName2 === strName) {
+         
         return true;
     } else {
-         console.log("The computer replied false ?");
+         
         return false;
     };
-    
 };
+
+if (namCheck === true){
+        console.log("The computer replied true ?");
+    } else {
+        console.log("The computer replied false ?");  
+};
+
+
 
 //Number Function ---- WORKING DO NOT MESS WITH!
 var i = 1;
@@ -63,10 +70,10 @@ var arrfun = function (){
 
 
 //code execution
-console.log(strFun(p,strName));                                                 //String Function
-console.log("Since " + p + " became President of the Universe though, him and " + strName + " have not spoken much.");
+console.log(strFun(strName2,strName));                                                 //String Function
+console.log("Since " + strName2 + " became President of the Universe though, him and " + strName + " have not spoken much.");
 
-namCheck(console.log(strName + " asked the supercomputer while him and " + p + " were standing there if it had finished the calculations yet?" + name));   //Boolean<---- is not displaying in console correctly!
+namCheck(console.log(strName + " asked the supercomputer while him and " + strName2 + " were standing there if it had finished the calculations yet?" + name));   //Boolean<---- is not displaying in console correctly!
 timeCheck(5);                                                                    //Number Function
 console.log("The supercomputer that had been biult, determined the meaning to Life, The Universe and Everything as 42");
 addition(23);                                                                   //Procedure
