@@ -52,16 +52,16 @@ return(console.log(nam1 + " and " + nam2 + " were best friends at one time."));
 };
 
 /*Array Function
-var arrfun = function (arrStates, numAge){
-    for(){};
+var arrfun = function (){
+    
 };
 */
 
 
 //code execution
-addition(23);                                                    //Procedure
-namCheck(console.log("What if everything you knew was "+ name)); // <---- is not displaying in console correctly!
-ageCheck(5);                                                     //Number Function
-var strRtn = strfun(p, strName);                                 //Variable for return output of String Function
-console.log(strRtn);                                             //String Function
+//addition(23);                                                    //Procedure
+namCheck(console.log("What if everything you knew was "+ name)); //Boolean<---- is not displaying in console correctly!
+//ageCheck(5);                                                     //Number Function
+//var strRtn = strfun(p, strName);                                 //Variable for return output of String Function
+//console.log(strRtn);                                             //String Function
 
