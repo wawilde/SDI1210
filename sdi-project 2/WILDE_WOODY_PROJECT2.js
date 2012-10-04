@@ -24,24 +24,25 @@ var addition = function (num1){
 
 //Boolean Function ---- WORKING DO NOT MESS WITH!
 var namCheck = function ( p , strName) {
-        
+       
     if (p === strName) {
          console.log("true ?");
     } else {
          console.log("false ?");
-    
+    return name;
     };
+    
 };
 
 //Number Function ---- WORKING DO NOT MESS WITH!
 var i = 1;
-var ageCheck = function(num){
+var timeCheck = function(num){
     
         while (i < num){
-            console.log(i + " month's reading Douglas Adams." );
+            console.log(i + " year's calculating and running numbers." );
             i++;
-    }; console.log(i + " months, that's how long it took me to read The Hitchikers Giude to the Galaxy.");
-  return i*i;
+    }; console.log(i + " generations had passed, and then suddenly after ");
+  return i;
 };
 
 //String Function ---- WORKING DO NOT MESS WITH!
@@ -53,19 +54,22 @@ return bestFriends;
 
 };
 
-/*Array Function
+//Array Function
 var arrfun = function (){
     
 };
-*/
+
 
 
 //code execution
-console.log(strFun(p,strName));                                             //String Function
+console.log(strFun(p,strName));                                                 //String Function
+console.log("Since " + p + " became President of the Universe though, him and " + strName + " have not spoken much.");
+
+namCheck(console.log(strName + " asked the supercomputer while him and " + p + " were standing there if it had finished the calculations yet?" + name + " replied the computer."));   //Boolean<---- is not displaying in console correctly!
+timeCheck(5);                                                                    //Number Function
+console.log("The supercomputer that had been biult, determined the meaning to Life, The Universe and Everything as 42");
+addition(23);                                                                   //Procedure
 
 
-addition(23);                                                    //Procedure
-namCheck(console.log("What if everything you knew was "+ name));   //Boolean<---- is not displaying in console correctly!
-ageCheck(5);                                                     //Number Function
 
 
