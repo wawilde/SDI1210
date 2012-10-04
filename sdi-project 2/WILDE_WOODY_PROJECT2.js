@@ -10,6 +10,8 @@
 var strName = "Zaphod Beablebrox";
 var numAge = 10;
 var strName2 = "Ford Fairlane"
+var arrfun = ["Trillian", "Arthur", "Marvin 'the depressed android'"];
+
 
 //Procedure ---- WORKING DO NOT MESS WITH!
 var addition = function (num1){
