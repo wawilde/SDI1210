@@ -24,12 +24,11 @@ var addition = function (num1){
 
 //Boolean Function ---- WORKING DO NOT MESS WITH!
 var namCheck = function ( p , strName) {
-    var = name;
-    
+        
     if (p === strName) {
-        name = console.log("true ?");
+         console.log("true ?");
     } else {
-        name = console.log("false ?");
+         console.log("false ?");
     
     };
 };
