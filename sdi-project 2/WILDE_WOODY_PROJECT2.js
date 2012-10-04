@@ -9,9 +9,9 @@
 // declare global variables
 var strName = "Zaphod Beablebrox";
 var numAge = 10;
-var strName2 = "Ford Fairlane"
+var strName2 = "Ford Fairlane";
 var arrfun = ["Trillian", "Arthur", "Marvin 'the depressed android'"];
-
+var magicNum = 42;
 
 //Procedure ---- WORKING DO NOT MESS WITH!
 var addition = function (num1){
@@ -25,16 +25,16 @@ var addition = function (num1){
 };
 
 //Boolean Function ---- 
-var namCheck = function ( strName2 , strName) {
-       
-    if (strName2 === strName) {
+var namCheck = function (numAge, magicNum){
+     var name;  
+    if (namAge === magicNum) {
          
         return (name = true);
     } else {
          
         return (name = false);
     };
-if (namCheck === true){
+if (name === true){
         console.log("The computer replied true ?");
     } else {
         console.log("The computer replied false ?");  
