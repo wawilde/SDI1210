@@ -24,10 +24,12 @@ var addition = function (num1){
 
 //Boolean Function ---- WORKING DO NOT MESS WITH!
 var namCheck = function ( p , strName) {
+    var = name;
+    
     if (p === strName) {
-        var name = console.log("true ?");
+        name = console.log("true ?");
     } else {
-        var name = console.log("false ?");
+        name = console.log("false ?");
     
     };
 };
@@ -44,11 +46,12 @@ var ageCheck = function(num){
 };
 
 //String Function ---- WORKING DO NOT MESS WITH!
-var strfun = function(nam1,nam2){
-return(console.log(nam1 + " and " + nam2 + " were best friends at one time."));
+var strFun = function(nam1,nam2){
+    var bestFriends = " were best friends at one time.";
+    bestFriends = nam1 + " and " +nam2 + bestFriends;
 
-    
-    
+return bestFriends;
+
 };
 
 /*Array Function
@@ -59,9 +62,11 @@ var arrfun = function (){
 
 
 //code execution
-//addition(23);                                                    //Procedure
-namCheck(console.log("What if everything you knew was "+ name)); //Boolean<---- is not displaying in console correctly!
-//ageCheck(5);                                                     //Number Function
-//var strRtn = strfun(p, strName);                                 //Variable for return output of String Function
-//console.log(strRtn);                                             //String Function
+console.log(strFun(p,strName));                                             //String Function
+
+
+addition(23);                                                    //Procedure
+namCheck(console.log("What if everything you knew was "+ name));   //Boolean<---- is not displaying in console correctly!
+ageCheck(5);                                                     //Number Function
+
 
