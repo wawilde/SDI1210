@@ -9,9 +9,10 @@
 // declare global variables
 var strName = "Zaphod Beablebrox";
 var numAge = 10;
-var strName2 = "Ford Fairlane";
-var arrfun = ["Trillian", "Arthur", "Marvin 'the depressed android'"];
 var magicNum = 42;
+var strName2 = "Ford Fairlane";
+var characterArr = ["Trillian", "Arthur", "Marvin 'the depressed android'"];
+
 
 //Procedure ---- WORKING DO NOT MESS WITH!
 var addition = function (num1){
@@ -25,9 +26,9 @@ var addition = function (num1){
 };
 
 //Boolean Function ---- 
-var namCheck = function (numAge, magicNum){
+var numCheck = function (numAge, magicNum){
      var name;  
-    if (namAge === magicNum) {
+    if (numAge === magicNum) {
          
         return (name = true);
     } else {
@@ -62,16 +63,18 @@ return bestFriends;
 };
 
 //Array Function
-var  = function (numAge, arrfun){
-    var index = arrfun.index;
-    var length = arrfun.length;
+var arrFun = function (numAge, characterArr){
+    var index = characterArr.index;
     
-    if(arrfun.length === 2){
+    
+    if(characterArr.length === 2){
         console.log("There are other characters in the book but i can only remember " + length);
     } else {
-        console.log("I can only remember " + index);
+        console.log("I can only remember :");
     };
-    
+        for (var i = 0; i < characterArr.length; i++){
+            console.log("There is " + characterArr.legnth);
+            };
 };
 
 
@@ -79,8 +82,8 @@ var  = function (numAge, arrfun){
 //code execution
 console.log(strFun(strName2,strName));                                                 //String Function
 console.log("Since " + strName2 + " became President of the Universe though, him and " + strName + " have not spoken much.");
-arrfun()
-namCheck(console.log(strName + " asked the supercomputer while him and " + strName2 + " were standing there if it had finished the calculations yet?" + name));   //Boolean<---- is not displaying in console correctly!
+arrFun( )
+numCheck(console.log(strName + " asked the supercomputer while him and " + strName2 + " were standing there if it had finished the calculations yet?" + name));   //Boolean<---- is not displaying in console correctly!
 timeCheck(5);                                                                    //Number Function
 console.log("The supercomputer that had been biult, determined the meaning to Life, The Universe and Everything as 42");
 addition(23);                                                                   //Procedure
