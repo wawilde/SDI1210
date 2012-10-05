@@ -64,16 +64,14 @@ return bestFriends;
 
 //Array Function
 var arrFun = function (numAge, characterArr){
-    var index = characterArr.index;
-    
-    
-    if(characterArr.length === 2){
+     
+        if(characterArr.length === 2){
         console.log("There are other characters in the book but i can only remember " + length);
     } else {
         console.log("I can only remember :");
     };
         for (var i = 0; i < characterArr.length; i++){
-            console.log("There is " + characterArr.legnth);
+            console.log("There is " + characterArr[i]);
             };
 };
 
@@ -82,7 +80,7 @@ var arrFun = function (numAge, characterArr){
 //code execution
 console.log(strFun(strName2,strName));                                                 //String Function
 console.log("Since " + strName2 + " became President of the Universe though, him and " + strName + " have not spoken much.");
-arrFun( )
+arrFun(numAge, characterArr );
 numCheck(console.log(strName + " asked the supercomputer while him and " + strName2 + " were standing there if it had finished the calculations yet?" + name));   //Boolean<---- is not displaying in console correctly!
 timeCheck(5);                                                                    //Number Function
 console.log("The supercomputer that had been biult, determined the meaning to Life, The Universe and Everything as 42");
