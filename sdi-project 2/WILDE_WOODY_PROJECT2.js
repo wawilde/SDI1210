@@ -29,10 +29,10 @@ var addition = function (num1){
 var numCheck = function (numAge, magicNum){
      var name;  
     if (numAge === magicNum) {
-         
+         console.log("The computer replied true ?");
         return (name = true);
     } else {
-         
+         console.log("The computer replied false ?");
         return (name = false);
     };
 if (name === true){
@@ -62,11 +62,11 @@ return bestFriends;
 
 };
 
-//Array Function
+//Array Function ---- WORKING DO NOT MESS WITH!
 var arrFun = function (numAge, characterArr){
      
         if(characterArr.length === 2){
-        console.log("There are other characters in the book but i can only remember " + length);
+        console.log("There are other characters in the book but i can only remember ");
     } else {
         console.log("I can only remember :");
     };
@@ -80,7 +80,7 @@ var arrFun = function (numAge, characterArr){
 //code execution
 console.log(strFun(strName2,strName));                                                 //String Function
 console.log("Since " + strName2 + " became President of the Universe though, him and " + strName + " have not spoken much.");
-arrFun(numAge, characterArr );
+arrFun(numAge, characterArr );                                                     //Array Function
 numCheck(console.log(strName + " asked the supercomputer while him and " + strName2 + " were standing there if it had finished the calculations yet?" + name));   //Boolean<---- is not displaying in console correctly!
 timeCheck(5);                                                                    //Number Function
 console.log("The supercomputer that had been biult, determined the meaning to Life, The Universe and Everything as 42");
