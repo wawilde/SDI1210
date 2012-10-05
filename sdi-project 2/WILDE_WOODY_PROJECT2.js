@@ -25,7 +25,7 @@ var addition = function (num1){
     };
 };
 
-//Boolean Function ---- 
+//Boolean Function ---- WORKING DO NOT MESS WITH!
 var numCheck = function (numAge, magicNum){
      var name;  
     if (numAge === magicNum) {
