@@ -33,8 +33,29 @@ return bestFriends;
 
 };
 
+//GREETING Function ---- WORKING DO NOT MESS WITH! 
+
+var getFullGreeting = function (name){
+	var currentHour = (new Date()).getHours(),
+	timeOfDay, greeting;
+		if (currentHour < 12 ){timeOfDay = "Morning"; }
+		else if (currentHour < 17 ){timeOfDay = "Afternoon"; }
+		else {timeOfDay = "Evening"; }
+	greeting = "Good " + timeOfDay + " , " + name + ", and now our story continues!";
+	return greeting;
+};
 
 
 //CODE EXECUTION
+var getFullGreetingByName = getFullGreeting("Mr. Lewis");
+console.log(getFullGreetingByName);
 addition(23);
 console.log(strFun(strName2,strName));
+
+
+
+
+
+
+
+

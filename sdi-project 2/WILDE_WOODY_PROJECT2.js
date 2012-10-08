@@ -7,11 +7,11 @@
  */
 
 // declare global variables
-var strName = "Zaphod Beablebrox";
+var strName = "Zaphod Beeblebrox";
 var numAge = 10;
 var magicNum = 42;
-var strName2 = "Ford Fairlane";
-var characterArr = ["Trillian", "Arthur", "Marvin 'the depressed android'"];
+var strName2 = "Ford Prefect";
+var characterArr = ["Trillian", "Arthur Dent", "Marvin 'the depressed android'"];
 
 
 //Procedure ---- WORKING DO NOT MESS WITH!
