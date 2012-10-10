@@ -45,13 +45,23 @@ var getFullGreeting = function (name){
 	return greeting;
 };
 
+//Number Function ---- WORKING DO NOT MESS WITH!
+var i = 1;
+var timeCheck = function(num){
+    
+        while (i < num){
+            console.log(i + " year's calculating and running numbers." );
+            i++;
+    }; console.log(i + " generations had passed, and then suddenly... ");
+  return i;
+};
 
 //CODE EXECUTION
 var getFullGreetingByName = getFullGreeting("Mr. Lewis");
 console.log(getFullGreetingByName);
 addition(23);
 console.log(strFun(strName2,strName));
-
+timeCheck(5);
 
 
 
