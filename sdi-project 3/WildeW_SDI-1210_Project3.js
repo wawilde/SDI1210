@@ -12,7 +12,7 @@ var numAge = 10;
 var magicNum = 42;
 var strName2 = "Ford Prefect";
 
-//Calling JSON Data
+//Calling JSON Data ---- WORKING DO NOT MESS WITH!
 var getData = function (json){
     for ( var i = 0; i < jsonData.cast.length; i++){
       var getList = jsonData.cast[i];
