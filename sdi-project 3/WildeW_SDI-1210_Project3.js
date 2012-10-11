@@ -12,6 +12,9 @@ var numAge = 10;
 var magicNum = 42;
 var strName2 = "Ford Prefect";
 
+//Global Variable's Output
+console.log(strName+" and "+ strName2 +" have known each other for " + numAge + " . Neither can believe the answer is simply " + magicNum + " .");
+
 //Calling JSON Data ---- WORKING DO NOT MESS WITH!
 var getData = function (json){
     for ( var i = 0; i < jsonData.cast.length; i++){
@@ -81,6 +84,7 @@ var cargoHold = function (item){
            
                 console.log("No HitchHikers!");
             };
+        return cargoload;
         };
     };
 };
@@ -102,5 +106,5 @@ console.log(strFun(strName2,strName));
 timeCheck(5);
 
 addition(23);
-cargoHold.push("Cooking Staff", "HitchHikers"));
+cargoLoad.push("Cooking Staff", "HitchHikers");
 console.log("")
