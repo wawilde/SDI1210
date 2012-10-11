@@ -11,7 +11,14 @@ var strName = "Zaphod Beeblebrox";
 var numAge = 10;
 var magicNum = 42;
 var strName2 = "Ford Prefect";
-var characterArr = ["Trillian", "Arthur Dent", "Marvin 'the depressed android'"];
+
+//Calling JSON Data
+var getData = function (json){
+    for ( var i = 0; i < jsonData.cast.length; i++){
+      var getList = jsonData.cast[i];
+      console.log("Introducing " + getList.name + " from the ship " + getList.ship + " !");
+    };
+};
 
 //Procedure ---- WORKING DO NOT MESS WITH!
 var addition = function (num1){
@@ -56,13 +63,14 @@ var timeCheck = function(num){
   return i;
 };
 
+
 //CODE EXECUTION
 var getFullGreetingByName = getFullGreeting("Mr. Lewis");
 console.log(getFullGreetingByName);
 addition(23);
 console.log(strFun(strName2,strName));
 timeCheck(5);
-
+getData(jsonData);
 
 
 
