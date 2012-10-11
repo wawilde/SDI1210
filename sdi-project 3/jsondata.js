@@ -25,7 +25,7 @@ var jsonData = {
         },
         {
             "name":        "Arthur Dent",
-            "occupation":  "Human/ wanderer/ Blocking Bulldozers/ planet destroyed to make way for a new superhighway",
+            "occupation":  "Human/ wanderer/ Blocking Bulldozers/ planet destroyed to make way for a new TransGalactic Bypass",
             "ship":        "The Heart of gold"
         },
         {

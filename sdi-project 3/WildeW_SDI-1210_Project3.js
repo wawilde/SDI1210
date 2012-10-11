@@ -16,7 +16,7 @@ var strName2 = "Ford Prefect";
 var getData = function (json){
     for ( var i = 0; i < jsonData.cast.length; i++){
       var getList = jsonData.cast[i];
-      console.log("Introducing " + getList.name + " from the ship " + getList.ship + " !");
+      console.log("Introducing " + getList.name + " a " + getList.occupation + " from the ship " + getList.ship + " !");
     };
 };
 
@@ -48,7 +48,7 @@ var getFullGreeting = function (name){
 		if (currentHour < 12 ){timeOfDay = "Morning"; }
 		else if (currentHour < 17 ){timeOfDay = "Afternoon"; }
 		else {timeOfDay = "Evening"; }
-	greeting = "Good " + timeOfDay + " , " + name + ", and now our story continues!";
+	greeting = "Good " + timeOfDay + " , " + name + ", and now this weeks story!";
 	return greeting;
 };
 
@@ -67,11 +67,14 @@ var timeCheck = function(num){
 //CODE EXECUTION
 var getFullGreetingByName = getFullGreeting("Mr. Lewis");
 console.log(getFullGreetingByName);
-addition(23);
-console.log(strFun(strName2,strName));
-timeCheck(5);
+
 getData(jsonData);
 
+console.log(strFun(strName2,strName));
+
+timeCheck(5);
+
+addition(23);
 
 
 
