@@ -16,7 +16,7 @@ var strName2 = "Ford Prefect";
 var getData = function (json){
     for ( var i = 0; i < jsonData.cast.length; i++){
       var getList = jsonData.cast[i];
-      console.log("Introducing " + getList.name + " a " + getList.occupation + " from the ship " + getList.ship + " !");
+      console.log("Introducing " + getList.name + " - " + getList.occupation + " from the ship " + getList.ship + " !");
     };
 };
 
@@ -24,16 +24,16 @@ var getData = function (json){
 var addition = function (num1){
     var sum = num1 + 19;
         if (sum >= 10) {
-        console.log("The total of " + num1 + " plus 19 is : " + sum);
+        console.log("The total of " + num1 + " plus 19 is : " + sum + " said Ford.");
     } else {
-        console.log("When " + num1 + " is added to 19 it totals " + sum + ".");
+        console.log("When " + num1 + " is added to 19 it totals " + sum + " said Arthur.");
     
     };
 };
 
 //String Function ---- WORKING DO NOT MESS WITH!
 var strFun = function(nam1,nam2){
-    var bestFriends = " were best friends at one time.";
+    var bestFriends = " looked at each other in astonishment.";
     bestFriends = nam1 + " and " +nam2 + bestFriends;
 
 return bestFriends;
@@ -63,6 +63,33 @@ var timeCheck = function(num){
   return i;
 };
 
+//GETTER (ACCESSOR) FUNCTION
+
+var cargoHold = function (item){
+    
+    var hold =  jsonData.cast.cargo;
+       
+        var cargoLoad = function (item) {
+            if (item !== "HitchHikers") {
+                hold.push(item);
+            } else {
+    
+                if (hold === true){
+                hold.push(item);
+                return (hold )  
+            } else {
+           
+                console.log("No HitchHikers!");
+            };
+        };
+    };
+};
+
+
+//SETTER (MUTATOR) FUNCTION
+
+
+
 
 //CODE EXECUTION
 var getFullGreetingByName = getFullGreeting("Mr. Lewis");
@@ -75,8 +102,5 @@ console.log(strFun(strName2,strName));
 timeCheck(5);
 
 addition(23);
-
-
-
-
-
+cargoHold.push("Cooking Staff", "HitchHikers"));
+console.log("")
