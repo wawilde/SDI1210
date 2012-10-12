@@ -12,9 +12,13 @@ var numAge = 10;
 var magicNum = 42;
 var strName2 = "Ford Prefect";
 
-//Global Variable's Output
-console.log(strName+" and "+ strName2 +" have known each other for " + numAge + " . Neither can believe the answer is simply " + magicNum + " .");
-
+//Global Variable Output
+var globVarOut = function (){
+            console.log(strName+" and "+ strName2 +" have known each other for " + numAge + " years. Neither can believe the answer is simply " + magicNum + " .");
+};    
+    
+    
+    
 //Calling JSON Data ---- WORKING DO NOT MESS WITH!
 var getData = function (json){
     for ( var i = 0; i < jsonData.cast.length; i++){
@@ -68,11 +72,11 @@ var timeCheck = function(num){
 
 //GETTER (ACCESSOR) FUNCTION
 
-var cargoHold = function (item){
+var cargoHold; //function ( item1, item2 ){
     
-    var hold =  jsonData.cast.cargo;
+    var hold = jsonData.cast.cargo;
        
-        var cargoLoad = function (item) {
+        var cargoLoad = function (item1, item2) {
             if (item !== "HitchHikers") {
                 hold.push(item);
             } else {
@@ -84,10 +88,10 @@ var cargoHold = function (item){
            
                 console.log("No HitchHikers!");
             };
-        return cargoload;
+        return cargoHold;
         };
     };
-};
+//};
 
 
 //SETTER (MUTATOR) FUNCTION
@@ -105,6 +109,9 @@ console.log(strFun(strName2,strName));
 
 timeCheck(5);
 
+console.log(globVarOut);
+
 addition(23);
-cargoLoad.push("Cooking Staff", "HitchHikers");
-console.log("")
+
+var cargo = cargoHold.cargoLoad("Cooking Staff", "HitchHikers");
+console.log(cargo)
