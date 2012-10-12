@@ -14,7 +14,8 @@ var strName2 = "Ford Prefect";
 
 //Global Variable Output
 var globVarOut = function (){
-            console.log(strName+" and "+ strName2 +" have known each other for " + numAge + " years. Neither can believe the answer is simply " + magicNum + " .");
+            console.log(strName+" and "+ strName2 +" have known each other for "
+                        + numAge + " years. Neither can believe the answer is simply " + magicNum + " .");
 };    
     
     
