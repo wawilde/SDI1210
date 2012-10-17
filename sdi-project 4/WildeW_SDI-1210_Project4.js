@@ -122,7 +122,15 @@ console.log(myStuff.titleCase("the quick brown fox."));             //CHANGES TH
 console.log("This function just changed a,b,c, to : " + myStuff.changeString("a,b,c,") );   //CHANGES THE "," TO A "/" DISPLAYS AS a/b/c
 console.log("This function just changed 1,2,3, to : " + myStuff.changeString("1,2,3,") );   //CHANGES THE "," TO A "." DISPLAYS AS 1.2.3
 
+/***************************NUMBER FUNCTIONS*************************************************/
 
+//Format a number to use a specific number of decimal places, as for money: 2.1 --> 2.10
+
+//Fuzzy-match a number: is the number above or below a number within a certain percent?
+
+//Find the number of hours or days difference between two dates.
+
+//Given a string version of a number such as "42", return the value as an actual Number, such as 42.
 
 
 
