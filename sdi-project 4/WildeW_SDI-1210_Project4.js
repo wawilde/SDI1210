@@ -94,19 +94,44 @@ var myLibrary = function ( ) {
     };
 
 }
+/***************************NUMBER FUNCTIONS*************************************************/
+
+//Format a number to use a specific number of decimal places, as for money: 2.1 --> 2.10
+var numberFormat = function formatDollar(num) {     //TAKES THE NUM ARGUMENT 
+    
+        var p = num.toFixed(2).split(".");          //TELLS WHERE TO PLACE THE "."
+    
+            return "$" + p[0].split("").reverse().reduce(function(acc, num, i, orig) {  //RETURNS THE STRING WITH DECIMAL PLACES
+    
+            return  num + (i && !(i % 3) ? "," : "") + acc;             //PLACES ","  FOR HUNDREDS,THOUSHANDS ECT.
+    
+        }, "") + "." + p[1];            //MODIFIES THE STRING SO THE OUTPUT IS IN MONEY FORMAT
+};
+//Fuzzy-match a number: is the number above or below a number within a certain percent?
+
+//Find the number of hours or days difference between two dates.
+
+//Given a string version of a number such as "42", return the value as an actual Number, such as 42.
+
+
+
 
 //returns for each function call
         return {
+              //STRING FUNCTION RETURNS
               "chkPhone": chkPhone,
               "emailFun": emailFun,
               "isUrl":    isUrl,
               "changeString": changeString,
-              "titleCase": titleCase
+              "titleCase": titleCase,
+              //NUMBER FUNCTION RETURNS
+              "numberFormat": numberFormat
+              
               
             };
 };
 var myStuff = new myLibrary();
-/*****************************STRING FUNCTION CALLS**********************************/
+/*****************************STRING FUNCTION CALLS************************************************/
 //PHONE NUMBER CHECK
 console.log("Is this a phone number ? " + myStuff.chkPhone("317-490-7081"));   //SHOULD GIVE A TRUE OUPUT
 console.log("Is this a phone number ? " + myStuff.chkPhone("Woody"));          //SHOULD GIVE A FALSE OUTPUT
@@ -122,17 +147,14 @@ console.log(myStuff.titleCase("the quick brown fox."));             //CHANGES TH
 console.log("This function just changed a,b,c, to : " + myStuff.changeString("a,b,c,") );   //CHANGES THE "," TO A "/" DISPLAYS AS a/b/c
 console.log("This function just changed 1,2,3, to : " + myStuff.changeString("1,2,3,") );   //CHANGES THE "," TO A "." DISPLAYS AS 1.2.3
 
-/***************************NUMBER FUNCTIONS*************************************************/
+/***************************NUMBER FUNCTION CALLS**************************************************/
 
-//Format a number to use a specific number of decimal places, as for money: 2.1 --> 2.10
-
-//Fuzzy-match a number: is the number above or below a number within a certain percent?
-
-//Find the number of hours or days difference between two dates.
-
-//Given a string version of a number such as "42", return the value as an actual Number, such as 42.
-
-
+//NUMBER FORMAT FUNCTION CALL
+console.log("This function change any number to a money format like the number 45664544.23423 would be : " + myStuff.numberFormat(45664544.23423)); // SHOULD DISPLAY NUMBER AS "$45,664,544.23"
+//formatDollar(45) // "$45.00"
+//formatDollar(123) // "$123.00"
+//formatDollar(7824) // "$7,824.00"
+//formatDollar(1) // "$1.00"
 
 
 
