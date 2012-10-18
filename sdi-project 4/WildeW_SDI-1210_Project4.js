@@ -96,19 +96,17 @@ var myLibrary = function ( ) {
 /***************************NUMBER FUNCTIONS*************************************************/
 
 //Format a number to use a specific number of decimal places, as for money: 2.1 --> 2.10
-var numberFormat = function formatNumber(num) {     //TAKES THE NUM ARGUMENT 
+var numberFormat = function formatNumber(number,decimal) {     //TAKES THE NUM ARGUMENT 
     
-        var p = num.toFixed(2).split(".");          //TELLS WHERE TO PLACE THE "."
+        var p = number.toFixed(decimal).split(".");          //TELLS WHERE TO PLACE THE "."
     
-            return p[0].split("").reverse().reduce(function(acc, num, i, orig) {  //RETURNS THE STRING WITH DECIMAL PLACES
+            return p[0].split("").reverse().reduce(function(acc, number, i, orig) {  //RETURNS THE STRING WITH DECIMAL PLACES
     
-            return  num + (i && !(i % 3) ? "," : "") + acc;             //PLACES ","  FOR HUNDREDS,THOUSHANDS ECT.
+            return  number + (i && !(i % 3) ? "," : "") + acc;             //PLACES ","  FOR HUNDREDS,THOUSHANDS ECT.
     
-        }, "") + "." + p[1];            //MODIFIES THE STRING SO THE OUTPUT IS IN MONEY FORMAT
-};
-//Fuzzy-match a number: is the number above or below a number within a certain percent?
+        }, "") + "." + p[1];            //MODIFIES THE STRING SO THE OUTPUT IS 
+}
 
-//Find the number of hours or days difference between two dates.
 
 //Given a string version of a number such as "42", return the value as an actual Number, such as 42.
 var numberString = function(num){
@@ -163,7 +161,7 @@ console.log("This function just changed 1,2,3, to : " + myStuff.changeString("1,
 /***************************NUMBER FUNCTION CALLS**************************************************/
 
 //NUMBER FORMAT FUNCTION CALL
-console.log("This function can change any number to a 2 decimal format like the number 544.23423 would be : " + myStuff.numberFormat(544.23423)); // SHOULD DISPLAY NUMBER AS "544.23"
+console.log("This function can change any number to a 2 decimal format like the number 544.23423 would be : " + myStuff.numberFormat(544.23423,3)); // SHOULD DISPLAY NUMBER AS "544.23"
 //NUMBER STRING FUNCTION CALL
 console.log(myStuff.numberString("42"));
 
