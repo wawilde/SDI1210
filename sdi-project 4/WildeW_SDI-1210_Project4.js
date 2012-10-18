@@ -71,37 +71,36 @@ var myLibrary = function ( ) {
         String.prototype.toProperCase = function () {           //CALLS PROTOTYPE STRING FUNCTION
  
         return this.replace(/\w\S*/g, function (txt) {          //TELLS WHICH LETTER(S) SHOULD BE UPPERCASE
+
             return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();       //DEFINES WHAT CHARACTER SPACES SHOULD BE CHANGED
+
             });
+
         };
+
         return fixThis.toProperCase();          //RETURNS TITLECASE VARIABLE VALUE WITH FIRST LETTER OF ANY WORDS CAPITALIZED
     }
 
 //Given a string that is a list of things separated by a given string, as well as another string separator, return a string with the first separator changed to the second: "a,b,c" + "," + "/" ? "a/b/c".
      var changeString = function changeSeparator(changeThis) {  //<--- WORKING DO NOT MESS WITH
             
-            if (changeThis == "a,b,c,") {       
-                
-                changeThis = "a/b/c/";      // CHANGES THE STRING "a,b,c"
-                
-                return changeThis;          //RETURNS THE NEW VALUE OF "a/b/c/"
+            changeThis.replace(/\,/g,'/');
             
-            } else {    
-            
-                changeThis = "1.2.3.";      //CHANGES THE VALUE OF "1,2,3,"
-            
-                return changeThis;          //RETURNS THE VALUE OF "1.2.3."
+                var newstring = changeThis.split(',').join('/');
+
+                return newstring;          //RETURNS THE CHANGED STRING
     };
 
-}
+
+
 /***************************NUMBER FUNCTIONS*************************************************/
 
 //Format a number to use a specific number of decimal places, as for money: 2.1 --> 2.10
-var numberFormat = function formatDollar(num) {     //TAKES THE NUM ARGUMENT 
+var numberFormat = function formatNumber(num) {     //TAKES THE NUM ARGUMENT 
     
         var p = num.toFixed(2).split(".");          //TELLS WHERE TO PLACE THE "."
     
-            return "$" + p[0].split("").reverse().reduce(function(acc, num, i, orig) {  //RETURNS THE STRING WITH DECIMAL PLACES
+            return p[0].split("").reverse().reduce(function(acc, num, i, orig) {  //RETURNS THE STRING WITH DECIMAL PLACES
     
             return  num + (i && !(i % 3) ? "," : "") + acc;             //PLACES ","  FOR HUNDREDS,THOUSHANDS ECT.
     
@@ -144,17 +143,14 @@ console.log("Is this a https url ? " + myStuff.isUrl("http://www.google.com") );
 //TITLE CASE CHANGE
 console.log(myStuff.titleCase("the quick brown fox."));             //CHANGES THE FIRST LETTER OF EACH WORD TO A CAPITAL LETTER
 //STRING CHANGE
-console.log("This function just changed a,b,c, to : " + myStuff.changeString("a,b,c,") );   //CHANGES THE "," TO A "/" DISPLAYS AS a/b/c
-console.log("This function just changed 1,2,3, to : " + myStuff.changeString("1,2,3,") );   //CHANGES THE "," TO A "." DISPLAYS AS 1.2.3
+console.log("This function just changed a,b,c, to : " + myStuff.changeString("a,b,c") );   //CHANGES THE "," TO A "/" DISPLAYS AS a/b/c
+console.log("This function just changed 1,2,3, to : " + myStuff.changeString("1,2,3") );   //CHANGES THE "," TO A "." DISPLAYS AS 1.2.3
 
 /***************************NUMBER FUNCTION CALLS**************************************************/
 
 //NUMBER FORMAT FUNCTION CALL
-console.log("This function change any number to a money format like the number 45664544.23423 would be : " + myStuff.numberFormat(45664544.23423)); // SHOULD DISPLAY NUMBER AS "$45,664,544.23"
-//formatDollar(45) // "$45.00"
-//formatDollar(123) // "$123.00"
-//formatDollar(7824) // "$7,824.00"
-//formatDollar(1) // "$1.00"
+console.log("This function change any number to a 2 decimal format like the number 544.23423 would be : " + myStuff.numberFormat(544.23423)); // SHOULD DISPLAY NUMBER AS "$45,664,544.23"
+
 
 
 
