@@ -111,13 +111,18 @@ var numberFormat = function formatNumber(num) {     //TAKES THE NUM ARGUMENT
 //Find the number of hours or days difference between two dates.
 
 //Given a string version of a number such as "42", return the value as an actual Number, such as 42.
-var numberString = function(numb){
+var numberString = function(num){
         
-    var actNumber;
-    
-        if (numb === " "){
+        
+            if (num === isNaN()){
+                var notNumber = alert("Numbers Only Please!");
+                return notNumber;
             
-            return actNumber;
+                    } else {
+               
+            var number = "Your Number is :" + num;
+            
+                return number;  
         };
     
 }
@@ -159,9 +164,9 @@ console.log("This function just changed 1,2,3, to : " + myStuff.changeString("1,
 
 //NUMBER FORMAT FUNCTION CALL
 console.log("This function can change any number to a 2 decimal format like the number 544.23423 would be : " + myStuff.numberFormat(544.23423)); // SHOULD DISPLAY NUMBER AS "544.23"
+//NUMBER STRING FUNCTION CALL
 console.log(myStuff.numberString("42"));
-
-
+console.log(myStuff.numberString("woody"));
 
 
 
