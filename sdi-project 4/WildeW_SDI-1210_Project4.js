@@ -84,9 +84,9 @@ var myLibrary = function ( ) {
 //Given a string that is a list of things separated by a given string, as well as another string separator, return a string with the first separator changed to the second: "a,b,c" + "," + "/" ? "a/b/c".
      var changeString = function changeSeparator(changeThis) {  //<--- WORKING DO NOT MESS WITH
             
-            changeThis.replace(/\,/g,'/');
+            changeThis.replace(/\,/g,'/');                      //THIS TELLS WHAT CHARACTER TO REPLACE
             
-                var newstring = changeThis.split(',').join('/');
+                var newstring = changeThis.split(',').join('/');  //THIS TELLS WHERE TO REPLACE THE CHARACTER
 
                 return newstring;          //RETURNS THE CHANGED STRING
     };
@@ -149,7 +149,7 @@ console.log("This function just changed 1,2,3, to : " + myStuff.changeString("1,
 /***************************NUMBER FUNCTION CALLS**************************************************/
 
 //NUMBER FORMAT FUNCTION CALL
-console.log("This function change any number to a 2 decimal format like the number 544.23423 would be : " + myStuff.numberFormat(544.23423)); // SHOULD DISPLAY NUMBER AS "$45,664,544.23"
+console.log("This function change any number to a 2 decimal format like the number 544.23423 would be : " + myStuff.numberFormat(544.23423)); // SHOULD DISPLAY NUMBER AS "544.23"
 
 
 
