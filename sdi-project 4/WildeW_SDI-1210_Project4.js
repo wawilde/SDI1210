@@ -110,20 +110,25 @@ var numberFormat = function formatNumber(number,decimal) {     //TAKES THE NUM A
 
 //Given a string version of a number such as "42", return the value as an actual Number, such as 42.
 var numberString = function(num){
-        
-        
-            if (num === isNaN()){
-                var notNumber = alert("Numbers Only Please!");
-                return notNumber;
+
+    
+                   Integer = num;
+                   var i = Integer.parseInt(num.replaceAll("^\\D*?(-?\\d+).*$", "$1"));
+
+            
+/*
+            if (num === int i = Integer.parseInt(num.replaceAll("\\D", ""))){
+                //var notNumber = alert("Numbers Only Please!");
+                return num;
             
                     } else {
-               
+*/               
             var number = "Your Number is : " + num;
             
                 return number;  
-        };
+        }
     
-}
+
 
 
 
