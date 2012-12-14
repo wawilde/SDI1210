@@ -112,7 +112,7 @@ var numberFormat = function formatNumber(number,decimal) {     //TAKES THE NUM A
 var numberString = function(num){
 
     
-                   Integer = num;
+                   int = num;
                    var i = Integer.parseInt(num.replaceAll("^\\D*?(-?\\d+).*$", "$1"));
 
             
